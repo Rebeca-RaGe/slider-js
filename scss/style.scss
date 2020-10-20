@@ -1,0 +1,89 @@
+$black: #280403;
+$grey: #e0dede;
+
+body {
+  font-family: "PT Sans", sans-serif;
+  background: $grey;
+}
+
+ul {
+  padding: 1rem 5rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  li {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.container {
+  max-width: 1280px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+.title {
+  font-family: "Sacramento", cursive;
+  font-size: 3.2rem;
+  padding: 1.5rem 0.5rem;
+}
+
+.technologies {
+  width: 100%;
+  text-align: center;
+  color: invert($black, 50%);
+
+  // Groups of technologies
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: invert($black, 50%);
+    transition: display 2s ease-in-out;
+
+    .tech {
+      font-size: 1.5rem;
+    }
+
+    h3 {
+      font-size: 1.6rem;
+    }
+
+    &-active {
+      animation: fadeIn ease-in-out 1s;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    &-hidden {
+      display: none;
+      animation: fadeOut ease-in-out 1s;
+    }
+
+    @keyframes fadeOut {
+      0% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+  }
+}
