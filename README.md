@@ -24,7 +24,10 @@ Concepts applied:
 Preview:
 ![Site Preview](img/preview.png)
 
+Gif preview:
 ![Live preview](img/slider.gif)
+
+[Let's go to see!](https://rebeca-rage.github.io/slider-js/)
 
 Conslusions:
 
